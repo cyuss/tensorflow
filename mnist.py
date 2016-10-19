@@ -42,7 +42,6 @@ def main(_):
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
-  	parser.add_argument('--data_dir', type=str, default='/tmp/data',
-                      help='Directory for storing data')
+  	parser.add_argument('--data_dir', type=str, default='/tmp/data', help='Directory for storing data')
   	FLAGS = parser.parse_args()
 	tf.app.run()
